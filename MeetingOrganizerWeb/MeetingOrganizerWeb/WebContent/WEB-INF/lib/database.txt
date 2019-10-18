@@ -1,0 +1,50 @@
+create table Rooms(FloorNo int(20),RoomType1 varchar(100),RoomType2 varchar(100),RoomType3 varchar(100));
+
+insert into Rooms values(1,'ConferenceRoom','AuditoriumRoom','MeetingRoom');
+insert into Rooms values(2,'ConferenceRoom','AuditoriumRoom','MeetingRoom');
+insert into Rooms values(3,'ConferenceRoom','AuditoriumRoom','MeetingRoom');
+insert into Rooms values(4,'ConferenceRoom','AuditoriumRoom','MeetingRoom');
+insert into Rooms values(5,'ConferenceRoom','AuditoriumRoom','MeetingRoom');
+
+create table ConferenceRoom(crid varchar(20),capacity int(250),FloorNo int(20));
+
+insert into ConferenceRoom values('cr10',100,1);
+insert into ConferenceRoom values('cr11',100,1);
+insert into ConferenceRoom values('cr20',100,2);
+insert into ConferenceRoom values('cr21',100,2);
+insert into ConferenceRoom values('cr30',100,3);
+insert into ConferenceRoom values('cr31',100,3);
+insert into ConferenceRoom values('cr40',100,4);
+insert into ConferenceRoom values('cr41',100,4);
+insert into ConferenceRoom values('cr50',100,5);
+insert into ConferenceRoom values('cr51',100,5);
+
+
+
+create table AuditoriumRoom(arid varchar(20),capacity int(250),FloorNo int(20));
+
+insert into AuditoriumRoom values('ar10',300,1);
+insert into AuditoriumRoom values('ar11',300,1);
+insert into AuditoriumRoom values('ar20',300,2);
+insert into AuditoriumRoom values('ar21',300,2);
+insert into AuditoriumRoom values('ar30',300,3);
+insert into AuditoriumRoom values('ar31',300,3);
+insert into AuditoriumRoom values('ar40',300,4);
+insert into AuditoriumRoom values('ar41',300,4);
+insert into AuditoriumRoom values('ar50',300,5);
+insert into AuditoriumRoom values('ar51',300,5);
+
+
+create table MeetingRoom(mrid varchar(20),capacity int(250),FloorNo int(20));
+
+insert into MeetingRoom values('mr10',60,1);
+insert into MeetingRoom values('mr11',60,1);
+insert into MeetingRoom values('mr20',60,2);
+insert into MeetingRoom values('mr21',60,2);
+insert into MeetingRoom values('mr30',60,3);
+insert into MeetingRoom values('mr31',60,3);
+insert into MeetingRoom values('mr40',60,4);
+insert into MeetingRoom values('mr41',60,4);
+insert into MeetingRoom values('mr50',60,5);
+insert into MeetingRoom values('mr51',60,5);
+
